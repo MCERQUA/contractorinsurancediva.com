@@ -1,12 +1,10 @@
 import type { Config } from "tailwindcss";
 
 /* ============================================================
-   DAIRY INSURANCE — "Fresh Pasture" palette
-   Token NAMES are inherited from the shared component architecture;
-   VALUES are remapped to pasture green (primary) / stream blue
-   (secondary) / honey gold (accent).
-   clay = pasture green · sage = stream blue · gold = honey
-   cream = milk paper · sand = soft sage
+   CONTRACTOR INSURANCE DIVA — "Boss Brand" palette
+   Stitch design system: deep plum + champagne gold
+   clay = champagne gold · sage = deep plum
+   cream = lavender-white · espresso = near-black plum
    ============================================================ */
 
 const config: Config = {
@@ -18,54 +16,54 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: "#FBF9F4",
-        sand: "#EEF2EA",
+        cream: "#faf5ff",
+        sand: "#f0e8ff",
         white: "#FFFFFF",
         clay: {
-          DEFAULT: "#2F6B3E",
-          dark: "#21502E",
-          light: "#4A8B58",
-          50: "#EEF5EF",
-          100: "#D6E8DA",
-          200: "#AED0B7",
-          300: "#82B58F",
-          400: "#5A9B6C",
-          500: "#4A8B58",
-          600: "#2F6B3E",
-          700: "#21502E",
-          800: "#173820",
-          900: "#0F2615",
+          DEFAULT: "#d4af37",
+          dark: "#b8961f",
+          light: "#e8c84f",
+          50: "#fdf9e8",
+          100: "#faf0c2",
+          200: "#f5e085",
+          300: "#eecb52",
+          400: "#e8c84f",
+          500: "#d4af37",
+          600: "#b8961f",
+          700: "#967810",
+          800: "#705807",
+          900: "#4a3a04",
         },
         sage: {
-          DEFAULT: "#2E7BB5",
-          dark: "#1F5E8C",
-          light: "#5DA0CC",
-          50: "#ECF4FA",
-          100: "#D2E6F3",
-          200: "#A6CEE4",
-          300: "#5DA0CC",
-          400: "#3E8DC0",
-          500: "#2E7BB5",
-          600: "#1F5E8C",
-          700: "#174866",
+          DEFAULT: "#4a1040",
+          dark: "#2d0a28",
+          light: "#7a2070",
+          50: "#fdf0fb",
+          100: "#f5d6f0",
+          200: "#e8a8e0",
+          300: "#d070c8",
+          400: "#a83aa0",
+          500: "#7a2070",
+          600: "#4a1040",
+          700: "#2d0a28",
         },
         gold: {
-          DEFAULT: "#E0A82E",
-          dark: "#B98416",
-          light: "#F0C868",
-          50: "#FCF5E6",
-          100: "#F7E8C2",
-          200: "#F0D386",
-          300: "#E8B84B",
-          400: "#E0A82E",
-          500: "#C8921A",
-          600: "#A37412",
+          DEFAULT: "#d4af37",
+          dark: "#b8961f",
+          light: "#e8c84f",
+          50: "#fdf9e8",
+          100: "#faf0c2",
+          200: "#f5e085",
+          300: "#eecb52",
+          400: "#e8c84f",
+          500: "#d4af37",
+          600: "#b8961f",
         },
-        espresso: "#1B2A22",
-        cocoa: "#44544A",
-        mocha: "#6E7B71",
-        adobe: "#DCE6D8",
-        adobeDark: "#C4D2BE",
+        espresso: "#1a0a22",
+        cocoa: "#3d2050",
+        mocha: "#7c5c8c",
+        adobe: "#e8d5f0",
+        adobeDark: "#d0b0e8",
       },
       fontFamily: {
         heading: ["var(--font-heading)", "Georgia", "serif"],
@@ -79,19 +77,22 @@ const config: Config = {
       },
       backgroundImage: {
         "sunrise-bands":
-          "linear-gradient(180deg, #FBF9F4 0%, #F1F5EC 40%, #EEF7EE 70%, #FBF9F4 100%)",
+          "linear-gradient(180deg, #faf5ff 0%, #f0e8ff 40%, #ede0ff 70%, #faf5ff 100%)",
         "warm-radial":
-          "radial-gradient(circle at 30% 20%, rgba(74,139,88,0.12) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(46,123,181,0.08) 0%, transparent 55%)",
-        "clay-gradient": "linear-gradient(135deg, #2F6B3E 0%, #4A8B58 100%)",
-        "sage-gradient": "linear-gradient(135deg, #2E7BB5 0%, #5DA0CC 100%)",
-        "gold-gradient": "linear-gradient(135deg, #E0A82E 0%, #F0C868 100%)",
+          "radial-gradient(circle at 30% 20%, rgba(212,175,55,0.10) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(74,16,64,0.08) 0%, transparent 55%), #faf5ff",
+        "clay-gradient": "linear-gradient(135deg, #d4af37 0%, #e8c84f 100%)",
+        "sage-gradient": "linear-gradient(135deg, #4a1040 0%, #7a2070 100%)",
+        "gold-gradient": "linear-gradient(135deg, #d4af37 0%, #e8c84f 100%)",
+        "diva-hero": "linear-gradient(135deg, #4a1040 0%, #1a0a22 60%, #2d0a28 100%)",
+        "diva-surface": "linear-gradient(180deg, #2d0a28 0%, #1a0a22 100%)",
       },
       boxShadow: {
-        warm: "0 10px 40px -15px rgba(31, 80, 46, 0.22), 0 4px 12px -6px rgba(27, 42, 34, 0.08)",
-        "warm-lg": "0 30px 70px -20px rgba(31, 80, 46, 0.28), 0 10px 30px -10px rgba(27, 42, 34, 0.10)",
-        card: "0 2px 8px -2px rgba(27, 42, 34, 0.06), 0 1px 3px -1px rgba(27, 42, 34, 0.04)",
-        "card-hover": "0 20px 50px -15px rgba(31, 80, 46, 0.24), 0 8px 20px -8px rgba(27, 42, 34, 0.10)",
-        arch: "inset 0 -8px 30px -10px rgba(31, 80, 46, 0.10)",
+        warm: "0 10px 40px -15px rgba(212,175,55,0.30), 0 4px 12px -6px rgba(26,10,34,0.15)",
+        "warm-lg": "0 30px 70px -20px rgba(212,175,55,0.35), 0 10px 30px -10px rgba(26,10,34,0.18)",
+        card: "0 2px 8px -2px rgba(26,10,34,0.08), 0 1px 3px -1px rgba(26,10,34,0.05)",
+        "card-hover": "0 20px 50px -15px rgba(212,175,55,0.28), 0 8px 20px -8px rgba(26,10,34,0.12)",
+        arch: "inset 0 -8px 30px -10px rgba(212,175,55,0.12)",
+        "gold-glow": "0 0 30px rgba(212,175,55,0.35), 0 0 60px rgba(212,175,55,0.15)",
       },
       keyframes: {
         "fade-up": { "0%": { opacity: "0", transform: "translateY(20px)" }, "100%": { opacity: "1", transform: "translateY(0)" } },
