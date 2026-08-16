@@ -4,23 +4,23 @@
 
 /* ============================================================
    CONTRACTOR INSURANCE DIVA — "Boss Brand" Design System
-   Stitch-generated: deep plum + champagne gold
+   Warm-earth house palette: deep bronze + copper + antique gold
    Dark-accented, elegant serif, fashion-forward legal-firm feel
    ============================================================ */
 
 @layer base {
   :root {
-    --bg-cream: #faf5ff;
-    --bg-sand: #f0e8ff;
+    --bg-cream: #faf6ef;
+    --bg-sand: #f2ebdf;
     --bg-white: #FFFFFF;
-    --clay: #d4af37;
-    --clay-dark: #b8961f;
-    --sage: #4a1040;
+    --clay: #8a5f0d;
+    --clay-dark: #6b4a08;
+    --sage: #5c2610;
     --gold: #d4af37;
-    --espresso: #1a0a22;
-    --cocoa: #3d2050;
-    --mocha: #7c5c8c;
-    --adobe: #e8d5f0;
+    --espresso: #161009;
+    --cocoa: #3a2a1c;
+    --mocha: #6d5240;
+    --adobe: #e9dcc9;
     --radius: 1rem;
   }
 
@@ -57,23 +57,23 @@
   .container-tight { @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8; }
   .container-wide { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
 
-  /* Gold CTA — champagne gold bg, dark plum text */
+  /* Gold CTA — antique-gold bg, warm ivory text (AA 5.24:1) */
   .btn-primary {
     @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full
-           bg-clay text-espresso font-body font-bold text-sm uppercase tracking-widest
+           bg-clay text-cream font-body font-bold text-sm uppercase tracking-widest
            shadow-warm hover:bg-clay-dark hover:shadow-warm-lg
            hover:-translate-y-0.5 transition-all duration-200
            focus:outline-none focus:ring-4 focus:ring-clay/30;
   }
-  /* Ghost button — gold border on plum bg or white bg */
+  /* Ghost button — antique-gold border/text on light bg */
   .btn-secondary {
     @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full
            bg-transparent text-clay font-body font-bold text-sm uppercase tracking-widest
-           border-2 border-clay hover:bg-clay hover:text-espresso
+           border-2 border-clay hover:bg-clay hover:text-cream
            hover:-translate-y-0.5 transition-all duration-200
            focus:outline-none focus:ring-4 focus:ring-clay/20;
   }
-  /* Plum button — for use on light sections */
+  /* Bronze button — for use on light sections */
   .btn-sage {
     @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full
            bg-sage text-cream font-body font-bold text-sm uppercase tracking-widest
@@ -103,7 +103,7 @@
     position: absolute;
     top: 0; left: 0; right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #4a1040 0%, #7a2070 35%, #d4af37 65%, #e8c84f 100%);
+    background: linear-gradient(90deg, #5c2610 0%, #8a3d12 35%, #a87715 65%, #d4af37 100%);
   }
 
   .pill { @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-body font-semibold uppercase tracking-wider; }
@@ -115,14 +115,14 @@
   .h-section { @apply font-heading font-bold text-3xl md:text-4xl lg:text-5xl text-espresso leading-[1.1]; }
   .lead { @apply text-lg md:text-xl text-mocha leading-relaxed; }
 
-  /* ===== Diva decorative motifs — plum + gold ===== */
+  /* ===== Diva decorative motifs — bronze + copper + gold ===== */
 
-  /* Subtle lavender-white with gold shimmer for hero/feature sections */
+  /* Subtle warm ivory with gold shimmer for hero/feature sections */
   .bg-sonoran {
     background-color: var(--bg-cream);
     background-image:
       radial-gradient(circle at 15% 15%, rgba(212, 175, 55, 0.08) 0%, transparent 40%),
-      radial-gradient(circle at 85% 75%, rgba(74, 16, 64, 0.06) 0%, transparent 45%);
+      radial-gradient(circle at 85% 75%, rgba(92, 38, 16, 0.06) 0%, transparent 45%);
   }
 
   /* Slightly tinted alt section */
@@ -130,29 +130,29 @@
     background-color: var(--bg-sand);
     background-image:
       radial-gradient(circle at 70% 20%, rgba(212, 175, 55, 0.07) 0%, transparent 45%),
-      radial-gradient(circle at 20% 80%, rgba(74, 16, 64, 0.05) 0%, transparent 40%);
+      radial-gradient(circle at 20% 80%, rgba(92, 38, 16, 0.05) 0%, transparent 40%);
   }
 
   /* Light hero/feature radial */
   .bg-warm-radial {
     background:
       radial-gradient(ellipse at top, rgba(212, 175, 55, 0.10) 0%, transparent 55%),
-      radial-gradient(ellipse at bottom right, rgba(74, 16, 64, 0.06) 0%, transparent 50%),
+      radial-gradient(ellipse at bottom right, rgba(92, 38, 16, 0.06) 0%, transparent 50%),
       var(--bg-cream);
   }
 
-  /* Plum-gold decorative band (replaces pastoral horizon stripe) */
+  /* Bronze-gold decorative band (replaces pastoral horizon stripe) */
   .horizon-band {
     background: linear-gradient(90deg,
-      #4a1040 0% 18%, #7a2070 18% 36%, #d4af37 36% 52%,
-      #b8961f 52% 68%, #7a2070 68% 84%, #4a1040 84% 100%);
+      #5c2610 0% 18%, #8a3d12 18% 36%, #d4af37 36% 52%,
+      #a87715 52% 68%, #8a3d12 68% 84%, #5c2610 84% 100%);
   }
 
   /* Subtle diagonal pattern for texture */
   .grain {
     background-image:
       repeating-linear-gradient(45deg, rgba(212,175,55,0.03) 0px, rgba(212,175,55,0.03) 1px, transparent 1px, transparent 8px),
-      repeating-linear-gradient(-45deg, rgba(74,16,64,0.02) 0px, rgba(74,16,64,0.02) 1px, transparent 1px, transparent 8px);
+      repeating-linear-gradient(-45deg, rgba(92,38,16,0.02) 0px, rgba(92,38,16,0.02) 1px, transparent 1px, transparent 8px);
   }
 
   /* Dotted pattern in gold */
@@ -165,11 +165,11 @@
   .arch-divider::after {
     content: ""; position: absolute; inset: 0; margin: auto;
     width: 10rem; height: 1.4rem;
-    background: linear-gradient(90deg, #4a1040 0% 20%, #7a2070 20% 42%, #d4af37 42% 60%, #b8961f 60% 80%, #4a1040 80% 100%);
+    background: linear-gradient(90deg, #5c2610 0% 20%, #8a3d12 20% 42%, #d4af37 42% 60%, #a87715 60% 80%, #5c2610 80% 100%);
     border-radius: 0.5rem; opacity: 0.88;
   }
 
-  /* Blog / article prose — plum-accented */
+  /* Blog / article prose — bronze-accented */
   .prose-warm { @apply max-w-none; }
   .prose-warm h2 { @apply font-heading font-bold text-2xl md:text-3xl text-espresso mt-12 mb-4; }
   .prose-warm h3 { @apply font-heading font-bold text-xl md:text-2xl text-espresso mt-8 mb-3; }
@@ -179,7 +179,7 @@
   .prose-warm li::before {
     content: ""; position: absolute; left: 0; top: 0.55em;
     width: 0.9rem; height: 0.9rem;
-    background: #d4af37;
+    background: #8a5f0d;
     border-radius: 50%; opacity: 0.8;
   }
   .prose-warm strong { @apply text-espresso font-semibold; }
@@ -188,13 +188,13 @@
 
   /* Dark surface utility — used in dark hero/CTA sections */
   .diva-dark {
-    background: linear-gradient(135deg, #4a1040 0%, #1a0a22 60%, #2d0a28 100%);
+    background: linear-gradient(135deg, #5c2610 0%, #161009 60%, #37170a 100%);
   }
   .diva-surface {
-    background-color: #2d0a28;
+    background-color: #37170a;
   }
   .diva-near-black {
-    background-color: #1a0a22;
+    background-color: #161009;
   }
 
   /* Gold text gradient */

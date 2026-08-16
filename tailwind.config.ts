@@ -2,9 +2,10 @@ import type { Config } from "tailwindcss";
 
 /* ============================================================
    CONTRACTOR INSURANCE DIVA — "Boss Brand" palette
-   Stitch design system: deep plum + champagne gold
-   clay = champagne gold · sage = deep plum
-   cream = lavender-white · espresso = near-black plum
+   Warm-earth house palette: deep bronze + copper + antique gold
+   clay = antique gold (on-light, AA-contrast) · sage = deep bronze/terracotta
+   gold = bright champagne gold (on-dark surfaces only)
+   cream = warm ivory · espresso = warm near-black
    ============================================================ */
 
 const config: Config = {
@@ -16,40 +17,40 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: "#faf5ff",
-        sand: "#f0e8ff",
+        cream: "#faf6ef",
+        sand: "#f2ebdf",
         white: "#FFFFFF",
         clay: {
-          DEFAULT: "#d4af37",
-          dark: "#b8961f",
-          light: "#e8c84f",
+          DEFAULT: "#8a5f0d",
+          dark: "#6b4a08",
+          light: "#a87715",
           50: "#fdf9e8",
-          100: "#faf0c2",
-          200: "#f5e085",
-          300: "#eecb52",
-          400: "#e8c84f",
-          500: "#d4af37",
-          600: "#b8961f",
-          700: "#967810",
-          800: "#705807",
-          900: "#4a3a04",
+          100: "#f7ebc4",
+          200: "#ecd287",
+          300: "#d9b23f",
+          400: "#a87715",
+          500: "#8a5f0d",
+          600: "#6b4a08",
+          700: "#543a06",
+          800: "#3d2a04",
+          900: "#2a1c02",
         },
         sage: {
-          DEFAULT: "#4a1040",
-          dark: "#2d0a28",
-          light: "#7a2070",
-          50: "#fdf0fb",
-          100: "#f5d6f0",
-          200: "#e8a8e0",
-          300: "#d070c8",
-          400: "#a83aa0",
-          500: "#7a2070",
-          600: "#4a1040",
-          700: "#2d0a28",
+          DEFAULT: "#5c2610",
+          dark: "#37170a",
+          light: "#8a3d12",
+          50: "#fdf3ea",
+          100: "#f4dcc4",
+          200: "#e5b585",
+          300: "#cd8340",
+          400: "#a95520",
+          500: "#8a3d12",
+          600: "#5c2610",
+          700: "#37170a",
         },
         gold: {
           DEFAULT: "#d4af37",
-          dark: "#b8961f",
+          dark: "#7a5e0a",
           light: "#e8c84f",
           50: "#fdf9e8",
           100: "#faf0c2",
@@ -57,13 +58,13 @@ const config: Config = {
           300: "#eecb52",
           400: "#e8c84f",
           500: "#d4af37",
-          600: "#b8961f",
+          600: "#7a5e0a",
         },
-        espresso: "#1a0a22",
-        cocoa: "#3d2050",
-        mocha: "#7c5c8c",
-        adobe: "#e8d5f0",
-        adobeDark: "#d0b0e8",
+        espresso: "#161009",
+        cocoa: "#3a2a1c",
+        mocha: "#6d5240",
+        adobe: "#e9dcc9",
+        adobeDark: "#d9c3a3",
       },
       fontFamily: {
         heading: ["var(--font-heading)", "Georgia", "serif"],
@@ -77,20 +78,20 @@ const config: Config = {
       },
       backgroundImage: {
         "sunrise-bands":
-          "linear-gradient(180deg, #faf5ff 0%, #f0e8ff 40%, #ede0ff 70%, #faf5ff 100%)",
+          "linear-gradient(180deg, #faf6ef 0%, #f2ebdf 40%, #ece2d2 70%, #faf6ef 100%)",
         "warm-radial":
-          "radial-gradient(circle at 30% 20%, rgba(212,175,55,0.10) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(74,16,64,0.08) 0%, transparent 55%), #faf5ff",
-        "clay-gradient": "linear-gradient(135deg, #d4af37 0%, #e8c84f 100%)",
-        "sage-gradient": "linear-gradient(135deg, #4a1040 0%, #7a2070 100%)",
+          "radial-gradient(circle at 30% 20%, rgba(212,175,55,0.10) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(92,38,16,0.08) 0%, transparent 55%), #faf6ef",
+        "clay-gradient": "linear-gradient(135deg, #8a5f0d 0%, #6b4a08 100%)",
+        "sage-gradient": "linear-gradient(135deg, #5c2610 0%, #8a3d12 100%)",
         "gold-gradient": "linear-gradient(135deg, #d4af37 0%, #e8c84f 100%)",
-        "diva-hero": "linear-gradient(135deg, #4a1040 0%, #1a0a22 60%, #2d0a28 100%)",
-        "diva-surface": "linear-gradient(180deg, #2d0a28 0%, #1a0a22 100%)",
+        "diva-hero": "linear-gradient(135deg, #5c2610 0%, #161009 60%, #37170a 100%)",
+        "diva-surface": "linear-gradient(180deg, #37170a 0%, #161009 100%)",
       },
       boxShadow: {
-        warm: "0 10px 40px -15px rgba(212,175,55,0.30), 0 4px 12px -6px rgba(26,10,34,0.15)",
-        "warm-lg": "0 30px 70px -20px rgba(212,175,55,0.35), 0 10px 30px -10px rgba(26,10,34,0.18)",
-        card: "0 2px 8px -2px rgba(26,10,34,0.08), 0 1px 3px -1px rgba(26,10,34,0.05)",
-        "card-hover": "0 20px 50px -15px rgba(212,175,55,0.28), 0 8px 20px -8px rgba(26,10,34,0.12)",
+        warm: "0 10px 40px -15px rgba(212,175,55,0.30), 0 4px 12px -6px rgba(22,16,9,0.15)",
+        "warm-lg": "0 30px 70px -20px rgba(212,175,55,0.35), 0 10px 30px -10px rgba(22,16,9,0.18)",
+        card: "0 2px 8px -2px rgba(22,16,9,0.08), 0 1px 3px -1px rgba(22,16,9,0.05)",
+        "card-hover": "0 20px 50px -15px rgba(212,175,55,0.28), 0 8px 20px -8px rgba(22,16,9,0.12)",
         arch: "inset 0 -8px 30px -10px rgba(212,175,55,0.12)",
         "gold-glow": "0 0 30px rgba(212,175,55,0.35), 0 0 60px rgba(212,175,55,0.15)",
       },
