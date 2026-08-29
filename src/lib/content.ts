@@ -42,7 +42,7 @@ export const COPY = {
     h2Lead: "Contractor coverage.",
     h2Highlight: "All 50 states.",
     lead: "From Texas and California to the Northeast's dense regulatory markets and the Southeast's booming construction economy, Contractors Choice Agency places contractor insurance programs in every state.",
-    imageAlt: "Contractor reviewing insurance documents — contractor insurance coverage nationwide",
+    imageAlt: "Contractors reviewing project plans on a jobsite — contractor insurance coverage nationwide",
     badgeTitle: "National coverage for every trade.",
     badgeSub: "Writing contractor programs in all 50 states since 2005.",
   },
